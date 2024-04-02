@@ -26,7 +26,6 @@ class App extends PureComponent {
     const name = e.target.name;
 
     this.setState(prevState => ({
-      ...prevState,
       [name]: (prevState[name] += 1),
     }));
   };
