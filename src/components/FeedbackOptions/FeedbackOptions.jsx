@@ -20,7 +20,7 @@ export class FeedbackOptions extends PureComponent {
             key={option}
             name={option}
             type="button"
-            onClick={onLeaveFeedback}
+            onClick={() => onLeaveFeedback(option)}
           >
             {option}
           </Button>

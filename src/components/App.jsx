@@ -22,11 +22,11 @@ class App extends PureComponent {
     bad: 0,
   };
 
-  handleFeedback = e => {
-    const name = e.target.name;
+  handleFeedback = option => {
+    // const name = e.target.name;
 
     this.setState(prevState => ({
-      [name]: prevState[name] + 1,
+      [option]: prevState[option] + 1,
     }));
   };
 
